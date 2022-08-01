@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+<!--  Meta tags -->	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  Essential tags -->		
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name='description' content='Slidertron, a slides proyector web emulator that also decolorizes and scratches the pictures.'>
+	<meta http-equiv='content-language' content='en-gb'>
+
+<!--  Social tags -->
+	<meta property="og:title" content="FindesFavs - Slidertron">
+	<meta property="og:image" content="https://frindestown.duckdns.org/img/SlidertronImg.jpg">
+	<meta property="og:url" content="https://frindestown.duckdns.org/slideshare.html">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!--  Non-Essential, But Recommended -->
+	<meta property="og:description" content="Image retrostorator. Apply dirt and aging effects to pictures.">
+	<meta property="og:creator" content="Frindeston Favorites.">
+	<meta name="twitter:image:alt" content="Slidertron retrostorator.">
+
+	<!--  Non-Essential, But Required for Analytics
+	<meta property="fb:app_id" content="your_app_id" /> -->
+	<meta name="twitter:site" content="@chafalladas_com"> 
+
+
+	<title>FindesFavs - Slidertron</title> 
+    <link rel="stylesheet" href="styles/fonts.css" media="all" />
+	<link rel="stylesheet" href="styles/crt.css" media="all" />
+	<link rel="stylesheet" href="styles/menus.css" media="all" />
+	<link rel="stylesheet" href="styles/tele.css" media="all" />
+	<link rel="stylesheet" href="styles/slides.css" media="all" />
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//frindestown.duckdns.org/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->	
+  </head>
+  <body onresize="posWindows();reposition();">
+  
+  <img class="crt-frame" src="img/crt_green_mask.png">
+  
+<div id="screen">
+	<div  id="content" class="frame" style="height: 800px;">
+	
+	<center><a href="https://freebitco.in/?r=102321&Frindesfavs" target="_blank"><img class ="thumbs" src="banners/freebitcoin728x90-3.webp" width="728" height="90" border="0" alt="Earn Bitcoin" title="Earn Bitcoin" align="center" /></a></center>
+	<!-- MENU  -->
+	<div id="menu">
+	<ul>
+	<!-- HOME  -->
+		<li><a href="FrindesFavs-Rollercoin.html">&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+	<!-- TOC  -->
+		<li><a href="index.html">Index</a></li>
+	<!-- MISC  -->
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Demos</a>
+		<div class="dropdown-content">
+			<a href="videomator.html" >VIDEOMATOR (pre alfa)</a>
+			<a href="slideshare.html" >SLIDERTRON</a>
+			<a href="#" class="ltrough">PRESENTRON (wip)</a>
+		</div>
+		</li>
+	<!-- HELP  -->
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Help</a>
+		<div class="dropdown-content">
+			<a href="#" onclick="showWin('help','visible');return false;">Help</a>
+			<a href="#" onclick="showWin('about','visible');return false;">About</a>
+			<a href="#" onclick="showWin('credits','visible');return false;">Credits</a>
+		</div>
+		</li>
+	<!-- CLOCK  -->
+		<span id="clock">AAAA/MM/DD 00:00:00</span>
+		</ul>
+	</div>
+	<!-- MENU  -->
+	<img class="cristal" src="img/suciedad.png" />
+	<p align="center"><br><br>
+		Slidertron.<br><br>
+	</p>
+	Web retrostorator. Bring back in time your shiny digital pictures.
+	<br><br>
+	<div id="diapos" class ="slidethumb"><center><img src="slides/diapos.png" width="750" height="650" border="0" alt="" onclick="startProyector()" class ="thumbs" /></center></div>
+	
+	<div id="help" class="windows">
+		<table cellspacing="0" cellpadding="4" border="1" width="95%">
+			<tr>	
+				<td align="center" class="tdWindow"><br><h1>HELP</h1><br><br>
+					Click on the slides to start the proyector.<br>
+					The control has five buttons.From let to right and top to bottom are:<br>
+						* Previous slide.<br>
+						* Next slide.<br>
+						* Focus--.<br>
+						* Focus++.<br>
+						* Power.<br>
+					<br>
+					When loading a picture there is a posibility that it could be damaged, dirty or unfocused. Use the focus buttons to correct it. You can turn off the damages and dirt using the switches below the corresponding labels. Also you can invoke a randon defect using the buttons over the switches.<br><br>		
+					LOADING YOUR PICTURES<br><br>
+					To retrostorate a picture, drag and drop it over the box with the slider cart picture.<br>
+					You can drop your personal pictures to see how they could look after retrostorating them. The images won't be loaded into the server neither will be sent to the net. The process of pictures is made at your computer.<br>
+					There is also the posibility of dragging pictures of other web pages.
+					<br><br><br><br>
+					
+				</td>
+			</tr>
+			<tr>
+				<td align="center"  class="tdWindow">
+					<span class="textbutton" onclick="showWin('help','hidden');return false;"><br>[&nbspOK&nbsp]<br><br></span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="about" class="windows">
+		<table cellspacing="0" cellpadding="4" border="1" width="95%">
+			<tr>	
+				<td align="center" class="tdWindow"><br><h1>ABOUT</h1><br>
+					A long ago, an aquitance of mine, Mr. John Titor shared the schematics and code for a "time prospecting device". It is an artifact that can probe different outcomes for a given action. It was the 90s, the most advanced processor that I could reach didn't have the minimum specs to run the program, nor any hardware could transfer the bandwith of the data flow and no memory could store the IA datagrams and nets required. Nowadays we did build a prototipe that could see 10^18 diferent variants of a determined coin flip, more or less 10s in the future and 2 in the past. It took more than a week to do so.<br>
+					But in the last ten years, neural and regular chips ones had advanced a lot, also I depured and debugged the code and blueprints, optimizing the process. I could then limit the number of posibilities and explore a selected route in the garden of forking paths.<br>
+					I configured the machine to show records stored electronically in the alternate realities since reading them was way much simpler than aquiring the state of light particles to produce images and mass variations to produce sounds of the original device. In that way I could access all the data flow of a technologically advanced reality, ignoring the others.
+					<br>When exploring a well documented route Known as Orbis Tertium I found traces of an alternate me that lived there. His story is what you will be told here.<br>
+					So yes, all the events related here are real and happened to me, but unfortunately not the me of the universe in wich you are reading this.
+				</td>
+			</tr>
+			<tr>
+				<td align="center"  class="tdWindow">
+					<span class="textbutton" onclick="showWin('about','hidden');return false;"><br>[&nbspOK&nbsp]<br><br></span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="credits" class="windows">
+		<table cellspacing="0" cellpadding="4" border="1" width="95%">
+			<tr>	
+				<td align="center" class="tdWindow"><br><h1>CREDITS</h1><br>
+				Fonts downloaded from here, <a href="https://int10h.org/oldschool-pc-fonts/fontlist/" target="_blank">Int10h</a>. Int 10h is a BIOS interruption to access the display in 80x computers.<br>
+				Also from <a href="https://int10h.org/" target="_blank">Int10h</a> got a <a href="https://int10h.org/blog/2021/01/simulating-crt-monitors-ffmpeg-pt-1-color/" target="_blank"> script </a> named ffcrt to transform the original videos into CRT looking ones.<br>
+				The effects of this page are inspired and some code borrowed from <a href="https://dev.to/ekeijl/retro-crt-terminal-screen-in-css-js-4afh target="_blank"> Edwin at dev.to</a> and the related ones.
+				The bevel is from <a href="https://scar45.github.io/retro-crt-startpage/index.html" target="_blank">Retro CRT Startpage</a>. <a href="https://github.com/custom-start-page/retro-crt" target="_blank">Here is his git.</a><br>
+				<a href="http://www.arachnoid.com/arachnophilia" target="_blank">Arachnophilia</a> and <a href="https://notepad-plus-plus.org/" target="_blank">notepad++</a> were used to write the HTML, javascript and CSS of this page.<br>
+				<a href="https://obsproject.com/" target="_blank">OBS Studio</a> to capture the games.<br>
+				<a href="https://shotcut.org/" target="_blank">Shotcut</a> to edit and recompress.<br>
+				<a href="https://ffmpeg.org/" target="_blank">ffmpeg</a> is used by ffcrt, the Int10h script.<br>
+        Screen dirt from the <a href="https://www.nexusmods.com/fallout4/mods/2595/" target="_blank">Inmersive Pip-Boy Cracked Screen</a>.<br>
+				<a href="https://www.irfanview.com/" target="_blank">Irfanview</a> and <a href="https://www.gimp.org/" target="_blank">Gimp</a> used to edit bitmap images.<br>
+				<a href="https://inkscape.org/" target="_blank">Inkscape</a> for vectors.<br>
+				<a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>, <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> and <a href="https://developer.mozilla.org/" target="_blank">Mozilla MDN</a> as sources of information.<br>
+				<a href="https://rollercoin.com/?r=l11dxwud" target="_blank">RollerCoin</a> is a game property of their autors.<br>
+				Licensed under <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT license</a>. Using <a href="http://arachnoid.com/careware/index.html" target="_blank">careware</a> license is welcomed. Sharing is caring.<br>
+				<a href="https://gist.github.com/rafszul/a6f28a0e4b912dd7c18b" target="_blank">SVG filter for effects.<br>
+				<a href="https://logosbynick.com/15-free-grunge-textures/" target="_blank">Grunge Textures</a>
+				</td>
+			</tr>
+			<tr>
+				<td align="center"  class="tdWindow">
+					<span class="textbutton" onclick="showWin('credits','hidden');return false;"><br>[&nbspOK&nbsp]<br><br></span>
+				</td>
+			</tr>
+		</table>
+	</div>	
+
+	<div class="scanline"></div>
+	<br><br><br>
+	</div>
+</div>
+<div id="projector">
+<img id="prScreen" src="slides/pantalla.png" width="1478" height="900" border="0" alt=""/>
+</div>
+<div id="slideActive" class="slides">
+<img id="slideDirt" src="slides/pelo.png" border="0" alt="" />
+<img id="slideDmg" src="slides/Texture15.png" border="0" alt="" />
+</div>
+<div id="switches" class="slides">
+		<table cellspacing="0" cellpadding="0" border="0" width="95%">
+			<tr  border="0">
+				<td align="center" border="0"><img src="slides/label_dirt.png" width="150" height="110" border="0" alt="" /></td>
+				<td align="center" border="0"><img  src="slides/label_damage.png" width="150" height="110" border="0" alt="" /></td>
+			</tr>
+			<tr border="0">
+				<td align="center" border="0"><img class="manos" src="slides/botonaco.png" width="73" height="76" border="0" alt="" onclick="rndEff(0);return false" /></td>
+				<td align="center" border="0"><img class="manos" src="slides/botonaco.png" width="73" height="76" border="0" alt="" onclick="rndEff(1);return false" /></td>
+			</tr>
+			<tr border="0">
+				<td align="center" border="0"><br><img id="sw_0" class="manos" src="slides/switch_0_b.png" width="45" height="100" border="0" alt="" onclick="swDmg(0);return false"/></td>
+				<td align="center" border="0"><br><img id="sw_1" class="manos" src="slides/switch_1_b.png" width="45" height="100" border="0" alt="" onclick="swDmg(1);return false"/></td>
+			</tr>
+		</table>
+</div>
+
+<div id="output" class="slides">
+</div>
+<div id="slideCart" class="matrixfonts"  ondragenter="console.log('dragenter'); document.getElementById('slideCart').style.opacity='1'; event.stopPropagation(); event.preventDefault();" ondragover="console.log('dragover'); document.getElementById('slideCart').style.opacity='1'; event.stopPropagation(); event.preventDefault();" ondrop="console.log('dodrop'); event.stopPropagation(); event.preventDefault(); dodrop(event);">
+DROP<br>YOUR PICTURES<br>HERE<br>
+</div>
+
+</div>
+<div id="controls" class="slides">
+	<div style="position:relative; top: 346px; left: 0px;">
+		<img src="img/mandoslider.png" width="104" height="346" border="0" alt=""/>
+	</div>
+	<div style="position:relative; top: 0px; left: 0px; width:0px;opacity:0"">
+		<img src="img/mando.svg" width="104" height="346"/>
+	</div>
+	<div style="position:relative; top: -318px; left: 16px; cursor:pointer; width:0px;opacity:0">
+		<img id="ff" src="img/boton.svg" width="32" height="32" onClick="moveOut(this);return false;" onmouseover="hightlightme(this,'on');" onmouseout="hightlightme(this,'off');" border="0"/>
+	</div>
+	<div style="position:relative; top: -349px; left: 55px; cursor:pointer; width:0px;opacity:0">
+		<img id="rw" src="img/boton.svg" width="32" height="32" onClick="moveOut(this);return false;" onmouseover="hightlightme(this,'on');" onmouseout="hightlightme(this,'off');" border="0"/>
+	</div>
+	<div class="lights" id="ffL" style="position:relative; top: -397px; left: 15px; cursor:pointer; width:0px;opacity:0">
+		<img id="ffF" src="img/flechaArr.svg" width="32" height="12" border="0"/>
+	</div>
+	<div class="lights" id="rwL" style="position:relative; top: -407px; left: 55px; cursor:pointer; width:0px;opacity:0">
+		<img id="rwF" src="img/flechaAba.svg" width="32" height="12" border="0"/>
+	</div>
+	<div style="position:relative; top: -348px; left: 14px; cursor:pointer; width:0px;opacity:0">
+		<img id="bm" src="img/boton.svg" width="32" height="32" onmousedown="changeBlur(this);return false;" onmouseup="stopBlur(this)" onmouseover="hightlightme(this,'on');" onmouseout="hightlightme(this,'off');stopBlur(this);" border="0"/>
+	</div>
+	<div style="position:relative; top: -380px; left: 54px; cursor:pointer; width:0px;opacity:0">
+		<img id="bl" src="img/boton.svg" width="32" height="32" onmousedown="changeBlur(this);return false;" onmouseup="stopBlur(this);" onmouseover="hightlightme(this,'on');" onmouseout="hightlightme(this,'off');stopBlur(this);" border="0"/>
+	</div>
+	<div style="position:absolute; top: 520px; left: 31px; cursor:pointer; width:0px;">
+		<img id="powBut" src="slides/switch_on.png" width="42" height="58" border="0" alt="" onclick="powerOff();return false;"/>
+	</div>
+</div>
+
+	<script src="js/scripts.js"></script>
+	<script src="js/slides.js"></script>
+
+<div style="z-index:0; ">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  id="svg-root" width="381" height="166">
+	<title id="test-title">filters-dispMap-BE-16</title>
+	<desc id="test-desc">Test which verifies the basic facilities of feDisplacementMap.</desc>
+	<defs>
+		<filter id="greenFill">
+			<feColorMatrix  id="greenMatrix"
+				type="matrix"
+				values="-0.496  0.000  0.000  0.000  0.000 
+				0.465  0.000  0.000  0.000  0.000 
+				-0.190  0.000  0.000  0.000  0.000 
+				1.000  1.000  1.000  1.000  0">
+			</feColorMatrix>
+		</filter>
+	</defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="combini">
+	<defs>
+	<filter id="myFilt">
+	<!-- First make the transparency with the source image and output in A  -->
+		<feComponentTransfer in="SourceGraphic" result="A">
+			<feFuncA id="opFu" type="table" tableValues="0 1">
+				<animate id="opA" attributeName="tableValues" begin="0s" dur="1.5s" restart_="always" repeatCount="1" values="0 0;0 1" fill="freeze"/>
+			</feFuncA>
+		</feComponentTransfer>
+	<!-- We blur the result put in A -->
+		<feGaussianBlur id="blF" in="A" stdDeviation="0" edgeMode = "duplicate">
+			<animate id="blA" attributeName="stdDeviation"
+					begin="0s" dur="1.5s" restart_="always" repeatCount="1"
+				values="15;0" fill="freeze"/>
+		</feGaussianBlur>		
+	</filter>
+	</defs>
+</svg>
+
+<svg height="0" width="0" id="clippingArea">
+	<defs>
+	<clipPath id="svgBigBradius">
+		<rect id="rectA" x="0" y="0" height="400" width="600" rx="30" ry="30">
+			<animate id="xClip" attributeName="x" begin="indefinite" dur="2.35s" restart_="always" repeatCount="1" values="0;400;0" fill="freeze"/>
+			<animate id="wClip" attributeName="width" begin="indefinite" dur="2.35s" restart_="always" repeatCount="1" values="400;0;400" fill="freeze"/>
+		</rect>
+	</clipPath>
+	</defs>
+</svg>
+</div>
+
+	<script src="js/scripts.js"></script>
+	<script src="js/slides.js"></script>
+
+</body>
+</html>
