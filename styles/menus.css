@@ -1,0 +1,118 @@
+#menu
+{
+	position: sticky;
+	min-width: 100%;
+	width: 100%;
+	height: 0%;
+	margin: 0;
+	padding: 0;
+	background-color: #00AA33;
+	left: 0;
+	top: 10;
+}
+#navMenu
+{
+	position: sticky;
+	min-width: 100%;
+	width: 100%;
+	height: 0%;
+	margin: 0;
+	padding: 0;
+	background-color: #00AA33;
+	left: 0;
+	top: 0;
+}
+ul {
+	list-style-type: none;
+	width: 100%
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #00AA33;
+	top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #AAFFDD;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(0, 25, 0, 0.8);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-color: #33AA33;
+  background-color: #00AA33;
+  min-width: 160px;
+  box-shadow: 25px 35px rgba(0, 25, 0, 0.5);
+}
+
+.dropdown-content a {
+  color: #AAFFDD;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.windows{
+  visibility: hidden;
+    top: 0;
+    left: 0;
+  position: fixed;
+  color: #AAFFDD;
+  border-collapse: separate;
+  border: 2px solid #AFFFDF;
+  background-color: #00AA33; 
+  box-shadow: 25px 35px rgba(0, 25, 0, 0.5);
+  overflow: auto;
+}
+.tdWindow
+{
+	color: #AAFFDD;
+	overflow: auto;
+	border-color: #AFFFDF;
+	font-size: 1.6em;
+}
+
+.textbutton
+{
+	color: #AAFFDD;
+	border-color: #AFFFDF;
+	cursor :pointer;
+}
+.textbutton:hover
+{
+	background-color: rgba(0, 25, 0, 0.8);	
+}
+.textbutton:active
+{
+	background-color: rgba(0, 55, 0, 0.8);
+}
+#clock
+{
+  display: block;
+  color: #AAFFDD;
+  text-align:right;
+  width:250px;
+  padding: 14px calc(89% - 200px);
+  
+}

@@ -1,0 +1,128 @@
+#slideActive {
+	visibility: hidden;
+	position: absolute;
+	overflow: hidden;
+	background: center url('../slides/alc_007.JPG');
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: auto;
+	left:-100px;
+	top: 130px;
+	box-shadow: inset 2px 3px 6px 4px rgba(255,255,250,0.5); /* change to alter the effect*/
+	border-radius:35px;
+	background-color:rgba(0,0,0,1);
+	filter: url(#myFilt) grayscale(40%) sepia(10%);/* Its easier to control the animation of a custom SVG filter, the others doesn't have anims.*/
+	z-index:1000;
+    transition: 0.3s;
+	transition-timing-function: cubic-bezier(1, 0, 0, 1);
+	clip-path: url(#svgBigBradius)
+}
+#slideDirt {
+	visibility: hidden;
+	position: absolute;
+	overflow: hidden;
+	margin: auto;
+	left:0px;
+	top: 0px;
+	filter: url(#myFilt)
+	z-index:1001;
+    transition: 0.3s;
+	transition-timing-function: cubic-bezier(1, 0, 0, 1);
+	pointer-events: none;
+}
+#slideDmg {
+	visibility: hidden;
+	position: absolute;
+	overflow: hidden;
+	margin: auto;
+	left:-100px;
+	top: 130px;
+	border-radius:35px;
+	filter: url(#myFilt)
+	z-index:1002;
+    transition: 0.3s;
+	transition-timing-function: cubic-bezier(1, 0, 0, 1);
+	clip-path: url(#svgBigBradius);
+	pointer-events: none;
+}
+.slidethumb
+{
+	filter: url(#greenFill);
+	z-index:1;
+}
+.lights
+{
+    transition: 0.25s ease-out;
+}
+
+#projector
+{
+	position: fixed;
+	visibility: hidden;
+	margin: auto;	
+	border-radius:5px;
+	opacity: 0%;
+	box-shadow: inset 0px 0px 40px 20px #009632; /* change to alter the effect*/
+	background-color:rgba(0,0,0,1);
+    width: 98%;
+    height: 95%;
+	top: 30px;
+	left: 20px;
+	z-index: 999;
+    transition: 0.3s;	
+	filter: brightness(60%);
+}
+#slideCart
+{
+	font-family: "Minecart-LCD", Inconsolata, monospace;
+	text-align: center;
+	background: center url('../slides/carroDiapos.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 2em;
+	text-shadow:
+		1px -1px 0 yellow,
+		-1px -1px 0 yellow,
+		1px -1px 0 yellow,
+		-1px 1px 0 yellow,
+		0px 0px 4px #000;
+	color: #FF0000;
+	position: absolute;
+	visibility: hidden;
+    width: 320px;
+    height: 187px;	
+	border-radius:5px;
+	background-color:rgba(250,250,250,0.9);
+	margin: 0px;
+	right: 35px;
+	top: 90px;
+	z-index: 1003;
+	filter: brightness(60%);
+}
+#slideCart:hover
+{
+	color: #FF0000;
+	background-color:rgba(255,255,255,1);
+}
+#controls
+{
+	position: absolute;
+	visibility: hidden;
+	margin: 0px;
+	right: 150px;
+	bottom: 0px;
+	z-index: 999;
+}
+#switches {
+	visibility: hidden;
+	position: absolute;
+	overflow: hidden;
+	margin: auto;
+	right:52px;
+	top: 280px;
+	z-index:999;
+    transition: 0.3s;
+	transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}

@@ -1,0 +1,125 @@
+
+@font-face {
+font-family: "IBM 3270pc";
+src: url("https://frindestown.duckdns.org/fonts/Web437_IBM_3270pc.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Eagle Space 2y";
+src: url("https://frindestown.duckdns.org/fonts/Web437_EagleSpCGA_Alt1-2y.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Eagle Space";
+src: url("https://frindestown.duckdns.org/fonts/Web437_EagleSpCGA_Alt1.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Eagle SpCGA 2y";
+src: url("https://frindestown.duckdns.org/fonts/Web437_EagleSpCGA_Alt2-2y.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Eagle SpCGA";
+src: url("https://frindestown.duckdns.org/fonts/Web437_EagleSpCGA_Alt2.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Eagle SpCGA Alt3 2y";
+src: url("https://frindestown.duckdns.org/fonts/Web437_EagleSpCGA_Alt3-2y.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Eagle SpCGA Alt3";
+src: url("https://frindestown.duckdns.org/fonts/Web437_EagleSpCGA_Alt3.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Cordata";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_Cordata_PPC-400.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_IBM_VGA_8x16-2x";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_IBM_VGA_8x16-2x.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_IBM_VGA_8x16";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_IBM_VGA_8x16.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_IBM_VGA_9x14-2x";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_IBM_VGA_9x14-2x.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_IBM_VGA_9x14";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_IBM_VGA_9x14.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_IBM_VGA_9x16-2x";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_IBM_VGA_9x16-2x.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_IBM_VGA_9x16";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_IBM_VGA_9x16.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Rainbow 132";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_Rainbow100_re_132.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_Rainbow100_re_40";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_Rainbow100_re_40.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_Rainbow100_re_66";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_Rainbow100_re_66.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "WebPlus_Rainbow100_re_80";
+src: url("https://frindestown.duckdns.org/fonts/WebPlus_Rainbow100_re_80.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+body
+{
+color: #009900
+}
+h1 {
+font-family: "IBM 3270pc", Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+color: #009900
+}
+p
+{
+font-weight:normal;
+font-style:normal;
+color: #009900
+}

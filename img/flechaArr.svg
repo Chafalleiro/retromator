@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="5.4230642mm" height="2.1294734mm" viewBox="0 0 5.4230639 2.1294735" version="1.1" id="svg278" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+
+	<defs id="defs275">
+		<filter id="f1" x="-0.27769035" y="-0.26370007" width="1.5548164" height="1.5274001">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="0.05361672" edgeMode="duplicate" id="feGaussianBlur399">
+	</feGaussianBlur>
+		</filter>
+	</defs>
+	<g id="layer1" transform="translate(-75.544977,-195.11363)">
+		<path style="opacity:0.9;fill:green;stroke:#none;stroke-width:0.2;stroke-linejoin:round" id="path1178" d="m 87.358992,197.18325 -6.475812,0 3.237906,-5.60822 z" transform="matrix(0.81234701,0,0,0.36663174,9.9209968,124.9128)" filter="url(#f1)"/>
+	</g>
+</svg>
