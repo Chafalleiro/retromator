@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  
+  <title>FindesFavs-VideoMAtor</title>
+    <link rel="stylesheet" href="styles/fonts.css" media="all">
+	<link rel="stylesheet" href="styles/crt.css" media="all">
+	<link rel="stylesheet" href="styles/menus.css" media="all">
+	<link rel="stylesheet" href="styles/tele.css" media="all">
+	
+  </head>
+  <body onresize="posWindows();" onload="loadColor();">
+  <img class="crt-frame" src="img/crt_green_mask.png">
+  <div id="screen"> 
+	<div id="content" class="frame" style="height: 800px; filter: url(#SphereMapTest) url(#contrast) url(#brightness) url(#colorfill);">
+<div style="display: none; position: absolute; top;-9999; z-index:0; visibility;: hidden;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg-root" width="381" height="166" z-index="-1">
+	<title id="test-title">filters-dispMap-BE-16</title>
+	<desc id="test-desc">Test which verifies the basic facilities of feDisplacementMap.</desc>
+    <defs>
+		<filter id="SphereMapTest" filterUnits="objectBoundingBox" x="-0.45" y="-1.29" width="1.6" height="3.5">
+			<feImage id="mapa" result="Map" xlink:href="img/sphere_wide_1.png" />
+			<feDisplacementMap id="despMap" in="SourceGraphic" in2="map" scale="100" xChannelSelector="R" yChannelSelector="G" />
+		</filter>
+		<filter id="colorfill" z-index="1">
+			<feColorMatrix id="colorMain" type="matrix" in="SourceGraphic" result="B"
+			values="
+				1	0	0	0	0
+				0	1	0	0	0
+				0	0	1	0	0
+				0	0	0	1	0
+				">
+			<animate id="colA" attributeName="values" begin="0s" dur="3.5s" restart_="always" repeatCount="1" values="
+				1	0	0	0	0
+				0	1	0	0	0
+				0	0	1	0	0
+				0	0	0	1	0;
+				1	0	0	0	0
+				0	1	0	0	0
+				0	0	1	0	0
+				0	0	0	1	0
+
+			" fill="freeze"/>
+			</feColorMatrix>
+			<feMerge>
+				<feMergeNode in="A"/>
+				<feMergeNode in="B"/>
+			</feMerge>
+		</filter>
+		<filter id="secondFill" z-index="0">
+			<feColorMatrix id="colorSec" type="matrix" in="SourceGraphic"
+			values="
+				0	0	0	0	0
+				0	1	0	0	0
+				0	0	0	0	0
+				0	0	0	1	0 
+                 "/>
+		</filter>
+		<filter id="brightness">
+			<feComponentTransfer>
+				<feFuncR id="brR" type="linear" slope="1"/>
+				<feFuncG id="brG" type="linear" slope="1"/>
+				<feFuncB id="brB" type="linear" slope="1"/>
+			</feComponentTransfer>
+		</filter>
+		<filter id="contrast">
+			<feComponentTransfer>
+				<feFuncR id="conR" type="linear" slope="1" intercept="0"/>
+				<feFuncG id="conG" type="linear" slope="1" intercept="0"/>
+				<feFuncB id="conB" type="linear" slope="1" intercept="0"/>
+			</feComponentTransfer>
+		</filter>
+		
+	</defs>
+</svg>
+</div>
+	<!-- MENU  -->
+	<div id="menu">
+	<ul>
+	<!-- HOME  -->
+		<li><a href="FrindesFavs-Rollercoin.html">&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+	<!-- TOC  -->
+		<li><a href="index.html">Index</a></li>
+	<!-- MISC  -->
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Demos</a>
+		<div class="dropdown-content">
+			<a href="videomator.html">VIDEOMATOR (pre alfa)</a>
+			<a href="slideshare.html">SLIDERTRON</a>
+			<a href="videomator.html#" class="ltrough">PRESENTRON (wip)</a>
+		</div>
+		</li>
+	<!-- HELP  -->
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Help</a>
+		<div class="dropdown-content">
+			<a href="#" onclick="showWin(&#39;help&#39;,&#39;visible&#39;);return false;">Help</a>
+			<a href="#" onclick="showWin(&#39;about&#39;,&#39;visible&#39;);return false;">About</a>
+			<a href="#" onclick="showWin(&#39;credits&#39;,&#39;visible&#39;);return false;">Credits</a>
+		</div>
+		</li>
+	<!-- Controls  -->				
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Controls</a>
+			<div class="dropdown-content">
+				<a href="#" onclick="showWin('colorControls','visible');return false;">Color controls</a>
+				<a href="#" onclick="showWin('crtControls','visible');return false;">CRT controls</a>
+			</div>					
+		</li>
+	<!-- CLOCK  -->
+		<span id="clock">2022/07/30 6:57:37</span>
+		</ul>
+	</div>
+	<!-- MENU  -->
+	<p align="center"><br><br>
+VIDEOMATOR<br><br>
+	A video demasterizer. Destroy your digitized and restored videos.
+	<br>
+	Reload or press F5 if you don't see the page correctly.
+	<br>
+	</p>
+	<br><br>
+Just try the options in the "Help-&gt;Controls" menu option.
+	<div style="border-radius: 30px; overflow: hidden; align: center; z-index:0;">
+	THIS IS A BARRELED TEXT OVER A BARRELED VIDEO
+		<embed id="tubVid" src="https://odysee.com/$/embed/AuroraAce/a6c1b2d862c23c42904656417d284f02b6007f61?r=8d7chjfCWzAY5Pnq45hA8WYjU73yPuUW" type="video/mp4" style="border-radius: 30px; width:100%; height: 1080px;">
+	THIS IS A BARRELED TEXT BELOW A BARRELED VIDEO
+	</div>
+
+	<div id="help" class="windows">
+		<table cellspacing="0" cellpadding="4" border="1" width="95%">
+			<tbody><tr>	
+				<td align="center" class="tdWindow"><br><h1>HELP</h1><br>
+					Open the controls pane in the menu "Help-&gt;Controls"<br>
+					The sliders control the barreling, "Scale" controls the deformation intensity. The others will position the image.<br>
+					You can copy an embed link in the input text at the top of the menu. By clicking outside the video will load and you can start to play it.<br><br>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="tdWindow">
+					<span class="textbutton" onclick="showWin(&#39;help&#39;,&#39;hidden&#39;);return false;"><br>[&nbsp;OK&nbsp;]<br><br></span>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div id="about" class="windows">
+		<table cellspacing="0" cellpadding="4" border="1" width="95%">
+			<tbody><tr>	
+				<td align="center" class="tdWindow"><br><h1>ABOUT</h1><br>
+					A long ago, an aquitance of mine, Mr. John Titor shared the schematics and code for a "time prospecting device". It is an artifact that can probe different outcomes for a given action. It was the 90s, the most advanced processor that I could reach didn't have the minimum specs to run the program, nor any hardware could transfer the bandwith of the data flow and no memory could store the IA datagrams and nets required. Nowadays we did build a prototipe that could see 10^18 diferent variants of a determined coin flip, more or less 10s in the future and 2 in the past. It took more than a week to do so.<br>
+					But in the last ten years, neural and regular chips ones had advanced a lot, also I depured and debugged the code and blueprints, optimizing the process. I could then limit the number of posibilities and explore a selected route in the garden of forking paths.<br>
+					I configured the machine to show records stored electronically in the alternate realities since reading them was way much simpler than aquiring the state of light particles to produce images and mass variations to produce sounds of the original device. In that way I could access all the data flow of a technologically advanced reality, ignoring the others.
+					<br>When exploring a well documented route Known as Orbis Tertium I found traces of an alternate me that lived there. His story is what you will be told here.<br>
+					So yes, all the events related here are real and happened to me, but unfortunately not the me of the universe in wich you are reading this.
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="tdWindow">
+					<span class="textbutton" onclick="showWin(&#39;about&#39;,&#39;hidden&#39;);return false;"><br>[&nbsp;OK&nbsp;]<br><br></span>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div id="credits" class="windows">
+		<table cellspacing="0" cellpadding="4" border="1" width="95%">
+			<tbody><tr>	
+				<td align="center" class="tdWindow"><br><h1>CREDITS</h1><br>
+				Fonts downloaded from here, <a href="https://int10h.org/oldschool-pc-fonts/fontlist/" target="_blank">Int10h</a>. Int 10h is a BIOS interruption to access the display in 80x computers.<br>
+				Also from <a href="https://int10h.org/" target="_blank">Int10h</a> got a <a href="https://int10h.org/blog/2021/01/simulating-crt-monitors-ffmpeg-pt-1-color/" target="_blank"> script </a> named ffcrt to transform the original videos into CRT looking ones.<br>
+				The effects of this page are inspired and some code borrowed from <a href="https://dev.to/ekeijl/retro-crt-terminal-screen-in-css-js-4afh%20target=" _blank"=""> Edwin at dev.to</a> and the related ones.
+				The bevel is from <a href="https://scar45.github.io/retro-crt-startpage/index.html" target="_blank">Retro CRT Startpage</a>. <a href="https://github.com/custom-start-page/retro-crt" target="_blank">Here is his git.</a><br>
+				<a href="http://www.arachnoid.com/arachnophilia" target="_blank">Arachnophilia</a> and <a href="https://notepad-plus-plus.org/" target="_blank">notepad++</a> were used to write the HTML, javascript and CSS of this page.<br>
+				<a href="https://obsproject.com/" target="_blank">OBS Studio</a> to capture the games.<br>
+				<a href="https://shotcut.org/" target="_blank">Shotcut</a> to edit and recompress.<br>
+				<a href="https://ffmpeg.org/" target="_blank">ffmpeg</a> is used by ffcrt, the Int10h script.<br>
+        Screen dirt from the <a href="https://www.nexusmods.com/fallout4/mods/2595/" target="_blank">Inmersive Pip-Boy Cracked Screen</a>.<br>
+				<a href="https://www.irfanview.com/" target="_blank">Irfanview</a> and <a href="https://www.gimp.org/" target="_blank">Gimp</a> used to edit bitmap images.<br>
+				<a href="https://inkscape.org/" target="_blank">Inkscape</a> for vectors.<br>
+				How to usae SVG and CSS filters in video elements. <a href="https://gist.github.com/rafszul/a6f28a0e4b912dd7c18b" target="_blank">rafszul gist  on the topic.</a> <a href="https://www.paulirish.com/work/videooo.xhtml" target="_blank">Paul Irish demo.</a>  
+				<a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>, <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> and <a href="https://developer.mozilla.org/" target="_blank">Mozilla MDN</a> as sources of information.<br>
+				<a href="https://rollercoin.com/?r=l11dxwud" target="_blank">RollerCoin</a> is a game property of their autors.<br>
+				Licensed under <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT license</a>. Using <a href="http://arachnoid.com/careware/index.html" target="_blank">careware</a> license is welcomed. Sharing is caring.<br>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="tdWindow">
+					<span class="textbutton" onclick="showWin(&#39;credits&#39;,&#39;hidden&#39;);return false;"><br>[&nbsp;OK&nbsp;]<br><br></span>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+USE THE "Controls->CRT Control" TO CHANGE THE BARREL AND SKEW OF THE SCREEN.<br>
+USE THE "Controls->Color Control" TO CHANGE THE COLOR OF THE SCREEN, ITS BRIGHTNES AND ITS CONTRAST<BR>
+POSSIBLE COLORS ARE "VGA", OR MONOCHROME PHOSPHOR IN GREEN, BLUE, YELLOW, RED AND WHITE TONES.<BR>
+YOU CAN CHANGE THE SOURCE OF THE VIDEOS IN THE CRT CONTROL SCREEN.
+	<br><br><br>
+	</div>
+	<div class="scanline"></div>
+	<img class="cristal" id="image" src="img/suciedad.png" style="position: fixed; left:0; top:0">
+</div>
+<div id="colorControls" class="windows">
+	<table cellspacing="0" cellpadding="4" border="1" width="95%" class="tableList">
+		<tr>
+			<td colspan="3" align="center" class="tdtitles tdWindow">
+			Color Controls
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="manos tdWindow"><img src="img/vga.png" width="128" height="128" border="0" onclick ="setColor('colA','svg-root','originalC')" /></td>
+			<td align="center" class="manos tdWindow"><img src="img/favicon_blue.png" width="128" height="128" border="0" onclick ="setColor('colA','svg-root','blueC')" /></td>
+			<td align="center" class="manos tdWindow"><img src="img/favicon_green.png" width="128" height="128" border="0" onclick ="setColor('colA','svg-root','greenC')" /></td>
+		</tr>
+		<tr>
+			<td align="center" class="manos tdWindow"><img src="img/favicon_red.png" width="128" height="128" border="0" onclick ="setColor('colA','svg-root','redC')" /></td>
+			<td align="center" class="manos tdWindow"><img src="img/favicon_yel.png" width="128" height="128" border="0" onclick ="setColor('colA','svg-root','yellowC')" /></td>
+			<td align="center" class="manos tdWindow"><img src="img/favicon_gray.png" width="128" height="128" border="0" onclick ="setColor('colA','svg-root','grayC')" /></td>
+		</tr>
+		<tr>
+			<td align="center"  colspan=3 class="tdWindow">
+				<label for="slider-mx">Contrast</label>:
+					<input class="slider" id="slider-con" type="range" min="0" max="2" value="1" step="0.005" oninput="brcon(this,'con');">
+				<label for="slider-my">Brightness</label>:
+					<input class="slider" id="slider-br" type="range"  min="0" max="2" value="1" step="0.01" oninput="brcon(this,'br')"><br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"  colspan=3 class="tdWindow">
+				<span class="textbutton" onclick="showWin('colorControls','hidden');return false;">
+					<br>[&nbspOK&nbsp]<br><br><br>
+				</span>
+			</td>
+		</tr>		
+	</table>
+</div>	
+	<div id="crtControls" class="windows tdWindow">
+		CRT BARREL ACTIVE <input type="checkbox" onchange="barrelCheck('content', this);"><br>
+		<label for="slider-x">Scale</label>:
+		<input class="slider" id="slider-x" type="range" min="0" max="5000" value="100" step="5" oninput="moveSlider(this, &#39;scale&#39;);this.nextElementSibling.value = this.value" onmouseover="this.nextElementSibling.value = this.value"><output>100</output>
+		<br>
+		<label for="slider-mx">x Filter</label>:
+		<input class="slider" id="slider-mx" type="range" min="-0.53" max="-0.17" value="-0.37" step="0.01" oninput="moveSMT(this, &#39;x&#39;);this.nextElementSibling.value = this.value"><output>24</output>
+		<label for="slider-my">y Filter</label>:
+		<input class="slider" id="slider-my" type="range" min="-1.55" max="-0.71" value="-1.05" step="0.01" oninput="moveSMT(this, &#39;y&#39;);this.nextElementSibling.value = this.value"><output>24</output><br>
+		<label for="slider-mw">w Filter</label>:
+		<input class="slider" id="slider-mw" type="range" min="1.45" max="2.1" value="1.5" step="0.05" oninput="moveSMT(this, &#39;width&#39;);this.nextElementSibling.value = this.value"><output>24</output>
+		<label for="slider-mh">h Filter</label>:
+		<input class="slider" id="slider-mh" type="range" min="2.5" max="4.05" value="1" step="0.05" oninput="moveSMT(this, &#39;height&#39;);this.nextElementSibling.value = this.value"><output>24</output><br>
+		<label for="slider-cw">w Root</label>:
+		<input class="slider" id="slider-cw" type="range" min="0" max="1200" value="640" step="1" oninput="moveRoot(this, &#39;width&#39;);this.nextElementSibling.value = this.value"><output>24</output>
+		<label for="slider-ch">h Root</label>:
+		<input class="slider" id="slider-ch" type="range" min="0" max="1024" value="480" step="1" oninput="moveRoot(this, &#39;height&#39;);this.nextElementSibling.value = this.value"><output>24</output><br>
+		<span>Paste an embedded URL in the text input and click <b style="cursor: pointer">here</b>: </span><input id="videoURL" type="text" onchange="changeSource(this)"><br>
+		Embedded URLs are like this: Ningen Isu https://odysee.com/$/embed/AuroraAce/a6c1b2d862c23c42904656417d284f02b6007f61?r=8d7chjfCWzAY5Pnq45hA8WYjU73yPuUW<br>
+		Babymetal https://www.youtube.com/embed/WIKqgE4BwAY<br>
+		Kifness-Bartorig https://www.youtube.com/embed/fn5UXy20utM<br>
+		TechnoCat https://www.youtube.com/embed/J---aiyznGQ<br>
+		Videobuck https://www.youtube.com/embed/jLdsF-YMKZk<br><br>
+		<center><span class="textbutton" onclick="showWin('crtControls','hidden');return false;"><br>[&nbspOK&nbsp]<br><br></span></center>
+	</div>
+<script src="js/scripts.js"></script>
+<script src="js/colors.js"></script>
+<script src="js/crt.js"></script>
+</body></html>
