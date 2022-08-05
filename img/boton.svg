@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" id="boton" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" edgeMode="duplicate">
+	</feGaussianBlur>
+	</filter>
+  </defs>
+<rect preserveAspectRatio="none" opacity="0.38" stroke="white" stroke-width="3" fill="none" id="rect312" width="32" height="32" x="0" y="0" ry="5" rx="5" filter="url(#f1)"/>
+</svg>
